@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Vincents Website</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+<body>
+
+    <div class="container row align-items-center">
+        <button id="button1" type="button" class="btn btn-primary">I Am Useless</button>
+        <button id="button2" type="button" class="btn btn-primary">I Do Something</button>
+    </div>
+
+    
+</body>
+
+</html>
+
+<script>
+
+    document.getElementById("button1").addEventListener("click", function() {
+        if (document.getElementById("button1").innerText === "Go To Youtube") {
+            window.location = "https://www.youtube.com"
+        } else {
+            alert("I Told You I Am Useless")
+        }
+    })
+
+    document.getElementById("button2").addEventListener("click", function() {
+        document.getElementById("button1").innerText = "Go To Youtube"
+    })
+
+</script>
